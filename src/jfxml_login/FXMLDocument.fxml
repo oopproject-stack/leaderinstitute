@@ -27,7 +27,7 @@
          </image>
       </ImageView>
       <Box accessibleRole="IMAGE_VIEW" depth="0.0" height="290.0" layoutX="356.0" layoutY="210.0" width="450.0" AnchorPane.bottomAnchor="102.0" AnchorPane.topAnchor="71.0" />
-      <PasswordField layoutX="386.0" id="basir" layoutY="204.0" promptText="***********" />
+      <PasswordField layoutX="386.0" fx:id="passwordField" layoutY="204.0" promptText="***********" />
       <Hyperlink layoutX="481.0" layoutY="232.0" text=" Not a Member Yet?" textFill="#959393">
          <font>
             <Font name="System Italic" size="10.0" />
@@ -43,7 +43,7 @@
             <Image url="@images/basir-04.png" />
          </image>
       </ImageView>
-     <TextField fx:id="textField" layoutX="386.0" layoutY="164.0" prefHeight="25.0" prefWidth="149.0" promptText="UserName/Email" />
+     <TextField fx:id="emailIdField" layoutX="386.0" layoutY="164.0" prefHeight="25.0" prefWidth="149.0" promptText="UserName/Email" />
       <ImageView fitHeight="149.0" fitWidth="220.0" layoutX="338.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-03.png" />
