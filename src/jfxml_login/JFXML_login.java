@@ -20,7 +20,9 @@ public class JFXML_login extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+System.out.println(getClass());
+        FXMLLoader loader;
+        loader = new FXMLLoader();
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

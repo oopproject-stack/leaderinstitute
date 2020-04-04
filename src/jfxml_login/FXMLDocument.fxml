@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -12,10 +11,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 <!--xmlns="http://javafx.com/javafx/11.0.1" -->
-
-<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_login.FXMLDocumentController">
+<AnchorPane id="AnchorPane"   xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_login.FXMLDocumentController">
 <!--<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/javafx/11.0.1" fx:controller="javafxapplication1.FXMLDocumentController">-->
    
     <children>
@@ -30,7 +27,7 @@
          </image>
       </ImageView>
       <Box accessibleRole="IMAGE_VIEW" depth="0.0" height="290.0" layoutX="356.0" layoutY="210.0" width="450.0" AnchorPane.bottomAnchor="102.0" AnchorPane.topAnchor="71.0" />
-      <PasswordField id="basir" layoutX="386.0" layoutY="204.0" promptText="        ***********" />
+      <PasswordField layoutX="386.0" fx:id="passwordField" layoutY="204.0" promptText="***********" />
       <Hyperlink layoutX="481.0" layoutY="232.0" text=" Not a Member Yet?" textFill="#959393">
          <font>
             <Font name="System Italic" size="10.0" />
@@ -46,9 +43,19 @@
             <Image url="@images/basir-04.png" />
          </image>
       </ImageView>
-     <TextField fx:id="textField" layoutX="386.0" layoutY="164.0" prefHeight="25.0" prefWidth="149.0" promptText="       Username/Email" />
+     <TextField fx:id="emailIdField" layoutX="386.0" layoutY="164.0" prefHeight="25.0" prefWidth="149.0" promptText="UserName/Email" />
+      <ImageView fitHeight="149.0" fitWidth="220.0" layoutX="338.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/basir-03.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="443.0" layoutY="252.0" prefHeight="21.0" prefWidth="45.0" text="SIGN IN" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
       <Line endX="-58.333343505859375" layoutX="465.0" layoutY="334.0" startX="-115.66665649414062" stroke="#70c0f5" />
-      <Line endX="32.0" layoutX="546.0" layoutY="334.0" startX="-35.20001220703125" stroke="#70c0f5" />
+      <Line endX="32.0" layoutX="546.0" layoutY="334.0" startX="-31.33331298828125" stroke="#70c0f5" />
       <ImageView fitHeight="409.0" fitWidth="602.0" layoutX="-38.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-09.png" />
@@ -59,7 +66,7 @@
             <Image url="@images/basir-02.png" />
          </image>
       </ImageView>
-      <Text fill="#639be5" layoutX="422.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" textAlignment="CENTER" wrappingWidth="76.99993896484375">
+      <Text fill="#70c0f5" layoutX="422.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" textAlignment="CENTER" wrappingWidth="76.99993896484375">
          <font>
             <Font size="19.0" />
          </font></Text>
@@ -72,28 +79,20 @@
          <image>
             <Image url="@images/basir-08.png" />
          </image></ImageView>
-      <Text layoutX="418.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Or With" textAlignment="CENTER" wrappingWidth="91.0511936596622">
+      <Text layoutX="419.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Or With" textAlignment="CENTER" wrappingWidth="91.0511936596622">
          <font>
             <Font name="System Italic" size="9.0" />
          </font>
       </Text>
-      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="369.0" layoutY="159.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="46.0" fitWidth="68.0" layoutX="331.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-07.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="369.0" layoutY="199.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="45.0" fitWidth="64.0" layoutX="329.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-06.png" />
          </image>
       </ImageView>
-      <Button layoutX="439.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #639be5;" text="Sign In" textAlignment="CENTER">
-         <font>
-            <Font size="11.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-      </Button>
     </children>
 </AnchorPane>
